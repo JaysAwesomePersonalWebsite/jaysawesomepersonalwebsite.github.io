@@ -13,6 +13,7 @@
 			resume_path: "",
 			phone: "+44 7712345679",
 			main_pic: "img/header.png",
+			logo_pic: "",
 			contact_pic: "img/EUTIC_ball.jpg",
 			banner_emojis: "🚀",
 			aboutMe: "In my free time I enjoy motorsports, Muay Thai and Chess. I have lived in various different counrties and can speak English, Spanish, French and Chinese."
@@ -220,18 +221,16 @@
 
 
 
-
-
+	<link id="logo" rel="icon" href="" />
 
 	<script>
 
-		const full_name = content.first_name + " " + content.last_name;
-		const initials = content.first_name.charAt(0) + (content.last_name ? content.last_name.charAt(0) : "");
-		document.title = full_name;
+	const full_name = content.first_name + " " + content.last_name;
+	const initials = content.first_name.charAt(0) + (content.last_name ? content.last_name.charAt(0) : "");
+	document.title = full_name;
+	document.getElementById("logo").href = content.logo_pic;
+
 	</script>
-
-
-	<link rel="icon" href="img/personal-logo.png">
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- Favicon-->
 	<link rel="shortcut icon" href="img/fav.png">
